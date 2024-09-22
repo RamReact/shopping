@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+:root{
+  --theme-color:#fdf8f8;
+  --secondary-color:#e81c11;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ----------------------- css for home page ----------------------------------- */
+.main-container{
+  width: 100vw;
+  background:var(--theme-color);
+  height: 100vh;
+  overflow-x: hidden;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topnav {
+  border: 1px solid #eee4e4;
+  height: 70px;
+  background: white;
+  box-shadow: 0px 6px 8px #e2d6d6;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.searchicon{
+  color: var(--secondary-color);
+}
+.right-side{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+}
+.navbar-menu{
+  font-size: 17px;
+  font-weight: 400;
+  color: #595959;
+}
+
+.homeslider1 {
+background: url('./Assets/images/banner/banner1.jpg');
+background-repeat: no-repeat;
+}
+.home-slider-container {
+  width: 100vw;
+  height: 700px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 135px;
+}
+.banner-heading {
+  font-size: 56px;
   color: white;
+  font-weight: 500;
 }
-
-.App-link {
-  color: #61dafb;
+.site-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading-icon {
+  color: #d4d4d4;
+  font-size: 34px;
+  opacity: 0.4;
+}
+.heading-dash {
+  color: #d4d4d4;
+  font-size: 20px;
+  border: 1px solid #f1f1f1;
+  width: 39px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.headin-hd{
+  font-size: 25px;
+  color: #595959;
+  font-weight: '600';
 }
