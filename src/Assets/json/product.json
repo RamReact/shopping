@@ -1,0 +1,28 @@
+{
+        "380397": {
+          "productpreview": "/-/media/11D01CAB0FD24496B693788CB958F82F.png",
+          "colorpreview": "/-/media/11D01CAB0FD24496B693788CB958F82F.png",
+          "sheen": ["0147"],
+          "Size": "12 oz.",
+          "colorFamily":"1431",
+          "upcnumber":"020066011772",
+          "pdf":[
+            {
+                "name":"English SDS",
+                "link":"/MSDS/ENGLISH/376883.pdf"
+            },
+            {
+                "name":"Spanish SDS",
+                "link":"/MSDS/SPANISH/376883.pdf"
+            },
+            {
+                "name":"French SDS",
+                "link":"/MSDS/FRENCH/376883.pdf"
+            }
+          ],
+          "category":"09876",
+          "colorName":"STRTADV SSPR 6PK DIALCP STN CLEAR"
+        }
+      }
+      
+  

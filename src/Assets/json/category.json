@@ -1,0 +1,32 @@
+{
+    "09876":{
+        "name":"Protective Enamel Custom Spray 5-in-1",
+        "image":"/-/media/9CA703EF74BE4DADAC3AA9EB7C43B5E2.png",
+        "brand": "34569",
+        "Description": {
+          "para": [
+            "Rust-Oleum® Stops Rust® Protective Enamel with Custom Spray 5-in-1 lets you choose from five spray patterns with a twist of the dial. Use the high output spray for large curved surfaces, standard for a traditional experience, low output for details and corners without drips and runs, and vertical or horizontal fans for flat surfaces. Whether you’re painting wide spaces, tight corners or textured surfaces, Protective Enamel with Custom Spray 5-in-1 gives you ultimate control for superior results. When you're done, turn the dial to the lock position and store the remaining spray paint for your next project.",
+            "The advanced Stops Rust formula delivers 30% greater corrosion resistance and enhanced color retention compared to original matching Stops Rust colors with the standard spray paint tip. The durable, protective coating provides ultimate rust prevention for a long-lasting finish and excellent resistance to abrasion, fading, chipping and dulling. Apply this fast-drying paint on indoor and outdoor metal and wood projects for a long-lasting superior results."
+          ],
+          "outline":{
+            "heading":"Stops Rust® Protective Enamel with Custom Spray 5-in-1 features",
+            "points":[
+                "Intuitive spray patterns that give the ultimate control when painting",
+                "360° any-angle spray technology",
+                "A variety of spray paint colors in gloss, semi-gloss, satin and flat sheens",
+                "Fast dry times; dries to the touch in 2-4 hours, recoat within 1 hour or after 48 hours"
+            ]
+          }
+        },
+        "product":["380397"],
+        "sheen":[
+            {"code":"0145","name":"Satin"},
+            {"code":"0146","name":"Matte"},
+            {"code":"0147","name":"Gloss"},
+            {"code":"0148","name":"Semi Gloss"},
+            {"code":"0149","name":"Flat"}
+
+        ],
+        "colorfamily":["1431","1432","1433","1434","1435","1436","1437","1438"]
+    }
+}
