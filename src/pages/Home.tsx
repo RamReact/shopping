@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import HomeSlider from '../Component/Home/slider';
+import TopNav from '../Component/Common/Topnavbar';
+import HomeproductSection from '../Component/Home/HomeproductSection';
 
 // Define the structure of the state using an interface
 interface State {
@@ -19,15 +22,10 @@ class Home extends Component<{}, State> {
   }
   render() {
     return (
-      <div>
-        <h2>Welcome, {this.state.name || 'Guet'}!</h2>
-        <input
-          type="text"
-          placeholder="Enter your name"
-          value={this.state.name}
-          onChange={(e) => this.setState({ name: e.target.value })}  // Update state on input change
-        />
-        <button onClick={this.callgreetings}>Greetings</button>
+      <div className='main-container'>
+       <TopNav />
+       {/* <HomeSlider /> */}
+       <HomeproductSection />
       </div>
     );
   }
