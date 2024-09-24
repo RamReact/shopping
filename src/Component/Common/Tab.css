@@ -1,0 +1,40 @@
+.pd-tab-container {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    border: 2px solid #e5dfdf;
+    border-radius: 10px;
+}
+.tab-container {
+    border-bottom: 1px solid #eee7e7;
+}
+.tabcontainer {
+    height: auto;
+    padding: 12px;
+    background: white;
+    border-radius: 10px;
+}
+button.tabs.nothighlight {
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1.1%;
+    background: #f8eaead6;
+    color: #b6adad;
+    font-size: 15px;
+    font-weight: 600;
+}
+button.tabs.highlight {
+    height: 100%;
+    border-bottom: 3px solid #d21919e0;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    background: #ff5950d6;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
