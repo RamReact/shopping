@@ -20,7 +20,7 @@ class Home extends Component<{}, State> {
   render() {
     return (
       <div>
-        <h2>Welcome, {this.state.name || 'Guest'}!</h2>
+        <h2>Welcome, {this.state.name || 'Guet'}!</h2>
         <input
           type="text"
           placeholder="Enter your name"
