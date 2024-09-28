@@ -5,6 +5,7 @@
     margin-top: 32px;
     border: 2px solid #e5dfdf;
     border-radius: 10px;
+    margin-bottom: 23px;
 }
 .tab-container {
     border-bottom: 1px solid #eee7e7;
@@ -17,10 +18,10 @@
 }
 button.tabs.nothighlight {
     height: 100%;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 1%;
-    padding-bottom: 1.1%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 14px;
+    padding-bottom: 16px;
     background: #f8eaead6;
     color: #b6adad;
     font-size: 15px;
@@ -29,12 +30,88 @@ button.tabs.nothighlight {
 button.tabs.highlight {
     height: 100%;
     border-bottom: 3px solid #d21919e0;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 1%;
-    padding-top: 1%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     background: #ff5950d6;
     color: #fff;
     font-size: 15px;
     font-weight: 600;
+}
+.description-seciton-main {
+    padding: 10px;
+}
+.para-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 16px;
+}
+p.Description-text {
+    text-align: justify;
+    color: #b6b2b2;
+    font-size: 15px;
+    font-weight: 500;
+}
+.outline-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4c4a4a;
+    margin-bottom: 19px;
+}
+p.outline-points {
+    text-align: justify;
+    color: #b6b2b2;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+}
+.outline-points {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.points-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.bullet-points{
+    color: #4c4a4a;
+}
+.techinfo-container {
+    padding: 10px;
+}
+.techinfo-sec1 {
+    margin-bottom: 10px;
+    border: 2px solid #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #eaeaea;
+}
+.tech-info-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4c4a4a;
+}
+.pdflistpoints {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+svg.pdflist-icon {
+    color: #ff9797;
+    font-size: 21px;
+}
+a.pdflist-link {
+    color: #ff9797;
+    font-size: 15px;
+    font-weight: 500;
+}
+.pdflist-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

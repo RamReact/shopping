@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import TopNav from "../Component/Common/Topnavbar";
-import CategoryData from '../Assets/json/category.json';
 import CategorySlider from "../Component/Categorypage/Categoryslider";
 import CategoryProductSection from "../Component/Categorypage/Categoryproductsection";
 import TabComponent from "../Component/Common/Tab";
-type ProductDatastate = {
+import { Interface } from "readline";
+
+interface ProductDatastate{
     CategoryId:string;
 };
+
 
 class ProductDetails extends Component<{}, ProductDatastate > {
     constructor(props: {}) {
@@ -15,7 +17,7 @@ class ProductDetails extends Component<{}, ProductDatastate > {
             CategoryId: "",
         };
     }
-
+     
     // Lifecycle method to get the productId from the URL
     componentDidMount() {
         const path = window.location.pathname;
@@ -30,7 +32,6 @@ class ProductDetails extends Component<{}, ProductDatastate > {
       };
      render() {
         const { CategoryId } = this.state;
-
         return (
             <div className="main-container">
                 <TopNav />
@@ -102,7 +103,7 @@ class ProductDetails extends Component<{}, ProductDatastate > {
                   </div>
                 </div>
                 <div className="pd-tab-container">
-                <TabComponent selectedTab="Tab1" onChange={this.handleTabChange} />
+                <TabComponent selectedTab="Tab1" onChange={this.handleTabChange} Catid={CategoryId} />
                 </div>
                 
             </div>
