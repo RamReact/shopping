@@ -1,9 +1,9 @@
 {
         "380397": {
           "product_id":"380397",
-          "productpreview": "/-/media/11D01CAB0FD24496B693788CB958F82F.png",
-          "colorpreview": "/-/media/11D01CAB0FD24496B693788CB958F82F.png",
-          "sheen": ["0147"],
+          "productpreview": "-/media/9CA703EF74BE4DADAC3AA9EB7C43B5E2.png",
+          "colorpreview": "-/media/5487B8B966B94BE6A9ECACA8669A6E20.png",
+          "sheen": ["0147","0148"],
           "Size": "12 oz.",
           "colormode":"light",
           "colorFamily":"1431",
@@ -23,16 +23,17 @@
             }
           ],
           "category":"09876",
-          "colorName":"STRTADV SSPR 6PK DIALCP STN CLEAR"
+          "colorName":"STRTADV SSPR 6PK DIALCP STN CLEAR",
+          "colorName2":"black"
         },
         "380398": {
           "product_id":"380398",
-          "productpreview": "/-/media/11D01CAB0FD24496B693788CB958F82F.png",
-          "colorpreview": "/-/media/11D01CAB0FD24496B693788CB958F82F.png",
+          "productpreview": "-/media/4596AA82237246C9B3BB64EBE056815A.png",
+          "colorpreview": "/-/media/99D0BCBA06FC49629DE3535780A90333.png",
           "sheen": ["0147"],
           "Size": "12 oz.",
           "colormode":"light",
-          "colorFamily":"1431",
+          "colorFamily":"1432",
           "upcnumber":"020066011772",
           "pdf":[
             {
@@ -49,7 +50,35 @@
             }
           ],
           "category":"09876",
-          "colorName":"STRTADV SSPR 6PK DIALCP STN CLEAR"
+          "colorName":"STRTADV SSPR 6PK DIALCP STN CLEAR",
+          "colorName2":"Satin Peaceful Blue"
+        },
+        "380399": {
+          "product_id":"380399",
+          "productpreview": "-/media/1FAF5FC821B440F8B019FE3CBF20C8F3.png",
+          "colorpreview": "-/media/339325BAA9484A5CB921516DC4EC0D5C.png",
+          "sheen": ["0147"],
+          "Size": "12 oz.",
+          "colormode":"light",
+          "colorFamily":"1432",
+          "upcnumber":"020066011772",
+          "pdf":[
+            {
+                "name":"English SDS",
+                "link":"/MSDS/ENGLISH/376883.pdf"
+            },
+            {
+                "name":"Spanish SDS",
+                "link":"/MSDS/SPANISH/376883.pdf"
+            },
+            {
+                "name":"French SDS",
+                "link":"/MSDS/FRENCH/376883.pdf"
+            }
+          ],
+          "category":"09876",
+          "colorName":"Satin Blue Haven",
+          "colorName2":"blue"
         }
       }
       
