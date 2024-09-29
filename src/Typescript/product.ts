@@ -16,6 +16,7 @@ interface pdf {
     pdf: pdf[];
     category: string; 
     colorName: string;
+    colorName2: string;
   }
   
   export type productDataArray={[key:string]:Product};

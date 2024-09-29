@@ -19,10 +19,7 @@ class HomeproductSection extends Component<{}, {}> {
     render() {
         return (
             <div>
-                {/* Heading component */}
                 <Heading heading="Our Product" />
-
-                {/* Render the brand using map */}
                 <div className="product-list">
                     {Object.keys(productData).map((key) => {
                         const product = (productData as ProductData)[key];
@@ -30,7 +27,8 @@ class HomeproductSection extends Component<{}, {}> {
                             <Link to={`/category/${key}/${product.name}`}>
                             <div key={key} className="product-item">
                                 <div className="pd-top-container">
-                                <img src={`${process.env.REACT_APP_BaseURL}${product.image}`} alt={product.name} className="product-img" />
+                                <img src={`${process.env.REACT_APP_BaseURL}${product.image}`} alt={product.name} 
+                                className="product-img-v1" />
                                 </div>
                                 <div className="pd-bottom-container">
                                     <p className="productname">{product.name}</p>
