@@ -86,15 +86,24 @@ background-repeat: no-repeat;
   grid-template-columns: repeat(4, 1fr); 
 }
 .product-list-cd {
-  display: grid;
-  gap: 20px; 
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;  /* Allow wrapping of items to the next row */
+  gap: 20px;  /* Space between items */
+  justify-content: center;  /* Center the items when there are fewer */
   margin-bottom: 40px;
-  grid-template-columns: repeat(5, 1fr); 
-  width: 90vw;
   margin-left: auto;
   margin-right: auto;
+  width: 90vw;
+  overflow: hidden;
 }
+
+.product-item {
+  flex: 1 1 263px;  /* Allow each item to grow and shrink, but maintain a minimum width of 263px */
+  max-width: 263px;  /* Prevent items from growing larger than 263px */
+  box-sizing: border-box;
+}
+
+
 .category-con{
   width: 263px !important;
 }

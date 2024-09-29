@@ -99,14 +99,15 @@ p.outline-points {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 svg.pdflist-icon {
-    color: #ff9797;
+    color: #ff5950d6;
     font-size: 21px;
 }
 a.pdflist-link {
-    color: #ff9797;
+    color: #ff5950d6;
     font-size: 15px;
     font-weight: 500;
 }
@@ -114,4 +115,85 @@ a.pdflist-link {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+svg.tbl-pdflist-icon {
+    color: #ff5950d6;
+    font-size: 18px;
+}
+.tbl-pdflist {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-direction: row;
+}
+a.tblpdflist-link {
+    color: #ff5950d6;
+    font-size: 13px;
+    font-weight: 500;
+}
+.tbl-pdf-con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+tr.MuiTableRow-root.MuiTableRow-head.css-apge8j-MuiTableRow-root {
+    background: #ff5950d6;
+}
+.MuiBox-root.css-zrlv9q {
+    background: #ff3c31d6;
+}
+.Mui-TableHeadCell-Content.MuiBox-root.css-1w86f15 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-20bmp1-MuiSvgIcon-root {
+    color: #ffffff;
+    font-size: 32px;
+}
+.css-1yg0dk4-MuiInputBase-root-MuiOutlinedInput-root{
+    color: #fff !important;
+    outline: none !important;
+}
+.MuiInputAdornment-root.MuiInputAdornment-positionEnd.MuiInputAdornment-outlined.MuiInputAdornment-sizeSmall.css-1i2hsuj-MuiInputAdornment-root {
+    display: none;
+}
+td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-alignLeft.MuiTableCell-sizeMedium.css-9wa8tm-MuiTableCell-root {
+    color: #615d5d;
+    font-size: 14px;
+    font-weight: 600;
+}
+td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-alignLeft.MuiTableCell-sizeMedium.css-169jqin-MuiTableCell-root,td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-alignLeft.MuiTableCell-sizeMedium.css-1e4elqh-MuiTableCell-root {
+    color: #d8d8d8;
+    font-size: 14px;
+    font-weight: 500;
+}
+tr.MuiTableRow-root.css-hsi95o-MuiTableRow-root:hover {
+    background-color: #ff4534 !important;
+}
+.MuiTableRow-root:hover .tblpdflist-link {
+    color: white !important; /* Change to the desired color */
+}
+.MuiTableRow-root:hover .tbl-pdflist-icon {
+    color: white !important; /* Change to the desired color */
+}
+.MuiBox-root.css-10gei56 {
+    background: #ff3c31d6;
+}
+.MuiTablePagination-root.MuiBox-root.css-8k4lth {
+    color: white !important;
+}
+.css-142h5t9-MuiFormLabel-root-MuiInputLabel-root {
+    color: #fff;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiSelect-icon.MuiSelect-iconStandard.css-rm9hue-MuiSvgIcon-root-MuiSelect-icon {
+    color: #fff;
+}
+.css-142h5t9-MuiFormLabel-root-MuiInputLabel-root,.MuiSelect-nativeInput{
+    color: #fff !important;
+}
+.MuiSelect-select.MuiSelect-standard.MuiInputBase-input.MuiInput-input.css-5bvx1p-MuiSelect-select-MuiInputBase-input-MuiInput-input {
+    color: #ffff;
 }
