@@ -4,16 +4,18 @@ import {
   useMaterialReactTable,
   type MRT_ColumnDef,
 } from 'material-react-table';
-
+import { HiOutlineExternalLink } from "react-icons/hi";
 // Example data type for the table
+type Pdf = {
+  name: string;
+  link: string;
+};
+
 type Person = {
-  name: {
-    firstName: string;
-    lastName: string;
-  };
-  address: string;
-  city: string;
-  state: string;
+  product_id: string;
+  colorName: string;
+  upcnumber: string;
+  pdf: Pdf[]; // Update the data type to include the pdf array
 };
 
 // TechInfoTable component
@@ -36,9 +38,25 @@ const TechInfoTable = ({ data }: { data: Person[] }) => {
       size: 200,
     },
     {
-      accessorKey: 'city',
+      accessorKey: 'pdf',  // Render the PDF column with a custom cell renderer
       header: 'Safety Data Sheets (SDS)',
-      size: 150,
+      size: 250,
+      Cell: ({ cell }) => {
+        // Access the pdf array
+        const pdfArray = cell.getValue<Pdf[]>();
+        return (
+          <div className='tbl-pdf-con'>
+            {pdfArray?.map((pdfItem, index) => (
+              <div key={index}  className='tbl-pdflist'>
+                <a href={`${process.env.REACT_APP_BaseURL}${pdfItem.link}`} target="_blank" rel="noopener noreferrer" className='tblpdflist-link'>
+                  {pdfItem.name}
+                </a>
+                <HiOutlineExternalLink className='tbl-pdflist-icon'/>
+              </div>
+            ))}
+          </div>
+        );
+      }
     },
   ], []);
 
@@ -46,6 +64,13 @@ const TechInfoTable = ({ data }: { data: Person[] }) => {
   const table = useMaterialReactTable({
     columns,
     data,
+    enableSorting: true, // Disable sorting for all columns
+    enableHiding: false, // Disable column hiding
+    enableGlobalFilter: true, // Enable global filter (search)
+    enableColumnActions:false,
+    enableDensityToggle:false,
+    enableFullScreenToggle:false,
+    enableColumnFilters:false,
   });
 
   return <MaterialReactTable table={table} />;

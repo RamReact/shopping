@@ -4,8 +4,12 @@ import CategorySlider from "../Component/Categorypage/Categoryslider";
 import CategoryProductSection from "../Component/Categorypage/Categoryproductsection";
 import TabComponent from "../Component/Common/Tab";
 import { Interface } from "readline";
+import Productdata from '../Assets/json/product.json';
+import categorydata from '../Assets/json/category.json';
+import { productDataArray } from "../Typescript/product";
 
 interface ProductDatastate{
+    ProductId:string;
     CategoryId:string;
 };
 
@@ -14,7 +18,8 @@ class ProductDetails extends Component<{}, ProductDatastate > {
     constructor(props: {}) {
         super(props);
         this.state = {
-            CategoryId: "",
+          ProductId: "",
+          CategoryId:""
         };
     }
      
@@ -22,16 +27,17 @@ class ProductDetails extends Component<{}, ProductDatastate > {
     componentDidMount() {
         const path = window.location.pathname;
         const pathParts = path.split("/");
-        const CategoryId = pathParts[2]; // First  param(brand ID)
-        
-
-        this.setState({CategoryId});
+        const ProductId = pathParts[2]; // First  param(brand ID)
+        this.setState({ProductId:ProductId});
+        //get category id with the product id 
+        const productdata = (Productdata as productDataArray)[ProductId];
+        this.setState({CategoryId:productdata?.category});
       }
       handleTabChange = (tabName: string) => {
         console.log('Selected tab:', tabName);
       };
      render() {
-        const { CategoryId } = this.state;
+        const { ProductId,CategoryId } = this.state;
         return (
             <div className="main-container">
                 <TopNav />
